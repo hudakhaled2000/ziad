@@ -1,0 +1,741 @@
+/*
+==============================
+==============================
+  ALL STYLES
+==============================
+==============================
+
+  01- Imports
+    01.01- Google Fonts
+
+  02- Reset Styles
+    02.01- General
+    02.02- Body
+    02.03- Unordered Lists
+    02.04- Anchors
+    02.05- Images
+    02.06- Buttons
+    02.07- Address
+    02.08- Small
+
+  03- Utility Classes
+    03.01- Background Overlay
+    03.02- Screen Readers Only
+    03.03- Parent's Full Width
+    03.04- Parent's Full Heghit
+    03.05- Float Right
+    03.06- Float Left
+    03.07- Float Fix
+    03.08- Maximum Width
+      03.08.01- 700px
+      03.08.02- 1210px
+      03.08.03- 1240px
+    03.09- Center content
+    03.10- Flex Column Direction
+    03.11- Justify Between
+    03.12- Display Inline Block
+    03.13- Vertical Align
+      03.13.01- Middle
+      03.13.02- Top
+    03.14- Align Text
+      03.14.01- Center
+      03.14.02- Start
+    03.15- Padding Block
+      03.15.01- 90px
+    03.16- Active Navigation Link
+    03.17- Buttons
+      03.17.01- Primary Button
+      03.17.01- Secondary Button
+
+  04- Page Styles
+    04.01- Page_Header
+      04.01.01- Top Section
+      04.01.02- Navigation Section
+      04.01.03- Hero
+    04.02- Page_Main
+      04.02.01- Who we are? - Section
+      04.02.02- Our Location - Section
+      04.02.03- Our Baking - Section
+      04.02.04- Contact Information - Section
+    04.03- Page_Footer
+      04.03.01- Top Section
+      04.03.02- Bottom Section
+*/
+
+/*
+==============================
+  01- Imports
+==============================
+*/
+
+/*
+  01.01- Google Fonts
+  ==========================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@400;700&display=swap");
+
+/*
+==============================
+  02- Reset Styles
+==============================
+*/
+
+/*
+  02.01- General
+  ==========================
+*/
+* {
+  box-sizing: border-box;
+  line-height: 1.86rem;
+  font-weight: 400;
+  margin: 0;
+  transition-property: all;
+  transition-duration: 150ms;
+}
+
+/*
+  02.02- Body
+  ==========================
+*/
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 17px;
+  color: #686868;
+}
+
+/*
+  02.03- Unordered Lists
+  ==========================
+*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  02.04- Anchors
+  ==========================
+*/
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*
+  02.05- Images
+  ==========================
+*/
+img {
+  display: block;
+}
+
+/*
+  02.06- Buttons
+  ==========================
+*/
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0;
+  line-height: 1.3rem;
+}
+
+/*
+  02.07- Address
+  ==========================
+*/
+address {
+  font-style: normal;
+}
+
+/*
+  02.08- Small
+  ==========================
+*/
+small {
+  font-size: 15px;
+}
+
+/*
+==============================
+  03- Utility Classes
+==============================
+*/
+
+/*
+  03.01- Background Overlay
+  ==========================
+*/
+.background_overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*
+  03.02- Screen Readers Only
+  ==========================
+*/
+.screen_readers_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/*
+  03.03- Parent's Full Width
+  ==========================
+*/
+.full_width {
+  width: 100%;
+}
+
+/*
+  03.04- Parent's Full Heghit
+  ==========================
+*/
+.full_height {
+  height: 100%;
+}
+
+/*
+  03.05- Float Right
+  ==========================
+*/
+.float_right {
+  float: right;
+}
+
+/*
+  03.06- Float Left
+  ==========================
+*/
+.float_left {
+  float: left;
+}
+
+/*
+  03.07- Float Fix
+  ==========================
+*/
+.clear_float {
+  clear: both;
+}
+
+/*
+  03.08- Maximum Width
+  ==========================
+*/
+
+/* 03.08.01- 700px */
+.max_width_700 {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+/* 03.08.02- 1210px */
+.max_width_1210 {
+  max-width: 1210px;
+  margin-inline: auto;
+}
+
+/* 03.08.03- 1240px */
+.max_width_1240 {
+  max-width: 1240px;
+  margin-inline: auto;
+}
+
+/*
+  03.09- Center content
+  ==========================
+*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  03.10- Flex Column Direction
+  ==========================
+*/
+.flex_column {
+  flex-direction: column;
+}
+
+/*
+  03.11- Justify Between
+  ==========================
+*/
+.justify_between {
+  justify-content: space-between;
+}
+
+/*
+  03.12- Display Inline Block
+  ==========================
+*/
+.inline_block {
+  display: inline-block;
+}
+
+/*
+  03.13- Vertical Align
+  ==========================
+*/
+
+/* 03.13.01- Middle */
+.align_y_middle {
+  vertical-align: middle;
+}
+
+/* 03.13.02- Top */
+.align_y_top {
+  vertical-align: top;
+}
+
+/*
+  03.14- Align Text
+  ==========================
+*/
+
+/* 03.14.01- Center */
+.text_center {
+  text-align: center;
+}
+
+/* 03.14.02- Start */
+.text_start {
+  text-align: start;
+}
+
+/*
+  03.15- Padding Block
+  ==========================
+*/
+
+/* 03.15.01- 90px */
+.padding_y_90 {
+  padding-block: 90px;
+}
+
+/*
+  03.16- Active Navigation Link
+  ==========================
+*/
+#active_nav_link {
+  border-color: #ae9768;
+  color: #e0dcd2;
+}
+
+/*
+  03.17- Buttons
+  ==========================
+*/
+
+.button-primary:hover,
+.button-secondary:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
+}
+
+/* 03.17.01- Primary Button */
+
+.button-primary {
+  background-color: #8e7754;
+  border: 2px solid transparent;
+}
+
+/* 03.17.01- Secondary Button */
+.button-secondary {
+  border: 2px solid white;
+}
+
+/*
+==============================
+  04- Page Styles
+==============================
+*/
+
+/*
+  04.01- Page_Header
+  ==========================
+*/
+
+.Page_Header {
+  height: 800px;
+  background-image: url(../assets/images/drew-coffman-1872.jpg);
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+/* 04.01.01- Top Section */
+
+.Page_Header-top {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: fit-content;
+}
+
+.Page_Header-top > div {
+  padding-inline: 16px;
+}
+
+/* 04.01.02- Navigation Section */
+
+.Page_Header-navigation {
+  font-family: "Alegreya", serif;
+  font-size: 18px;
+}
+
+.Page_Header-navigation li:hover {
+  color: #dfc58f;
+}
+
+.Page_Header-navigation li > a {
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+  height: 90px;
+  border-top: 3px solid transparent;
+}
+
+/* 04.01.03- Hero */
+
+.Page_header-hero {
+  text-align: center;
+}
+
+.Page_header-hero > div {
+  margin-top: 50px;
+}
+
+.Page_header-hero .hero-top_heading {
+  font-size: 22px;
+  margin-bottom: 5px;
+  line-height: 2.8rem;
+}
+
+.Page_header-hero .hero-heading {
+  font-size: 76px;
+  font-family: "Alegreya", serif;
+  line-height: 1.2em;
+  margin-bottom: 18px;
+}
+
+.Page_header-hero .hero-subtitle {
+  font-size: 24px;
+  margin-block: 10px 20px;
+  line-height: 2.8rem;
+}
+
+.Page_header-hero .hero-buttons {
+  margin-block: 30px 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.Page_header-hero .hero-button {
+  padding: 15px 28px;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 1.3rem;
+}
+
+/*
+  04.02- Page_Main
+  ==========================
+*/
+
+/* 04.02.01- Who we are? - Section */
+
+.About-section--hero {
+  width: 644.2px;
+  padding-left: 79px;
+}
+
+.About-section--heading {
+  font-family: "Alegreya", serif;
+  font-size: 32px;
+  color: #303030;
+  line-height: 3rem;
+  margin-bottom: 25px;
+}
+
+.About-section--paragraph {
+  line-height: 2rem;
+}
+
+.About-section--treats {
+  margin-top: 25px;
+}
+
+.About-section--treat:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.About-section--treat > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.About-section--treat > img {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 2px;
+}
+
+/* 04.02.02- Our Location - Section */
+
+.Location-section {
+  background-color: #f8f8f8;
+}
+
+.Location-section--hero {
+  width: 644.2px;
+  padding-right: 79px;
+}
+
+.Location-section--heading {
+  font-family: "Alegreya", serif;
+  font-size: 32px;
+  color: #303030;
+  line-height: 3rem;
+  margin-bottom: 25px;
+}
+
+.Location-section--hero > p {
+  line-height: 2rem;
+}
+
+.Location-section--hero > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* 04.02.03- Our Baking - Section */
+
+.Products-section {
+  text-align: center;
+  padding-block: 75px;
+}
+
+.Products-section--heading {
+  font-family: "Alegreya", serif;
+  font-size: 30px;
+  color: #303030;
+  line-height: 3rem;
+}
+
+.Products-section--subtitle {
+  color: #888888;
+  margin-block: 17px 60px;
+}
+
+.Products-section .product {
+  width: 378.33px;
+  float: left;
+}
+
+.Products-section .product_name {
+  font-family: "Alegreya", serif;
+  font-size: 22px;
+  color: #303030;
+  margin-block: 30px 15px;
+}
+
+.Products-section .product_discription {
+  line-height: 2rem;
+}
+
+.Products-section .product.odd_size {
+  width: 373.33px;
+}
+
+.Products-section .product:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* 04.02.04- Contact Information - Section */
+
+.Contacts-section {
+  background-color: #f8f8f8;
+}
+
+.Contacts-section--hero {
+  width: 565.2px;
+  float: left;
+}
+
+.Contacts-section--heading {
+  font-family: "Alegreya", serif;
+  font-size: 32px;
+  color: #303030;
+  line-height: 3rem;
+  margin-bottom: 25px;
+}
+
+.Contacts-section--secondary_heading {
+  font-size: 17px;
+  margin-block: 30px 18px;
+}
+
+.Contacts-section--info img {
+  background-color: #8e7754;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.Contacts-section--info > li {
+  margin-top: 27px;
+}
+
+.Contacts-section--info > li > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+  04.03- Page_Footer
+  ==========================
+*/
+
+.Footer-top_section {
+  color: #969696;
+  background-color: #403d38;
+  padding-block: 60px;
+  font-size: 16px;
+}
+
+/* 04.03.01- Top Section */
+
+.Footer-top-section {
+  width: 25%;
+  float: left;
+  padding-inline: 16px;
+}
+
+.Footer-top-section .heading {
+  font-family: "Alegreya", serif;
+  font-size: 18px;
+  color: white;
+  line-height: 1.38rem;
+  margin-bottom: 25px;
+}
+
+.Footer-top-section .first_p {
+  margin-bottom: 20px;
+}
+
+.Footer-top-section li {
+  line-height: 2.05rem;
+}
+
+.Footer-top-section li:not(:last-child) {
+  margin-bottom: 6px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.Footer-top-section li > img {
+  margin-right: 7px;
+}
+
+.Footer-top-section .map_background {
+  background-image: url(../assets/images/contact-details-map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Footer-top-section .address_overlay {
+  background-color: rgba(64, 61, 56, 0.9);
+}
+
+.Footer-top-section address li:not(:last-child) {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.Footer-top-section address .first_icon {
+  margin-right: 16.7px;
+}
+
+.Footer-top-section address .second_icon {
+  margin-right: 12.84px;
+}
+
+.Footer-top-section address .third_icon {
+  margin-right: 9px;
+}
+
+.Footer-top-section address .fourth_icon {
+  margin-right: 11.56px;
+}
+
+.Footer-top-section address li > p,
+.Footer-top-section address li > a {
+  max-width: 245px;
+}
+
+/* 04.03.02- Bottom Section */
+
+.Footer-bottom_section {
+  background-color: #353330;
+  padding-block: 60px 50px;
+  text-align: center;
+}
+
+.Footer-bottom--description {
+  margin-block: 10px 23px;
+  color: #777777;
+}
+
+.Footer-bottom_section .social_media > li {
+  display: inline-block;
+}
+
+.Footer-bottom_section .social_media > li:not(:last-child) {
+  margin-right: 5px;
+}
+
+.Footer-bottom_section .social_media img {
+  border-radius: 50%;
+  background-color: #484540;
+}
+
+.Footer-bottom_section .facebook_logo:hover {
+  background-color: #324c83;
+}
+
+.Footer-bottom_section .google_plus_logo:hover {
+  background-color: #c74433;
+}
+
+.Footer-bottom_section .linkedin_logo:hover {
+  background-color: #0081bd;
+}
+
+.Footer-bottom_section .twitter_logo:hover {
+  background-color: #00aced;
+}
